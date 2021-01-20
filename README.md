@@ -1,3 +1,3 @@
-# Workshop - Next.js & TailwindCSS & Framer Motion
+# Portfólio - Usando Next.js & TailwindCSS & Framer Motion | Portfólio - Using Next.js & TailwindCSS & Framer Motion
 
-We'll build a lightweight, animated & responsive small website.
+Um portfólio leve, animado e responsivo. | A light, lively and responsive portfolio.
