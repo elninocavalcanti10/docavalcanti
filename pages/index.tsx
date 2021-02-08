@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
 import { motion, Variants, AnimatePresence } from 'framer-motion'
 
 import Card from '../components/Card'
@@ -65,47 +67,56 @@ export default function Home() {
         tecnologias existentes no mercado.
       </motion.p>
 
-      <motion.div 
+      <div 
         id="cases"
-        className="flex w-48 space-x-16 mt-24"
+        className="mt-24 flex-1 items-center flex flex-col sm:flex-row"
       >
         <Link href="https://futel.com.br">
-          <motion.img
-            className="bg-yellow-600 rounded-2xl p-4 cursor-pointer"
-            key={'https://futel.com.br/wp-content/uploads/2019/07/futel-telecom-nova-logo.png'}
-            src={'https://futel.com.br/wp-content/uploads/2019/07/futel-telecom-nova-logo.png'}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          />
+          <div className="flex-1 m-4">
+              <motion.img 
+                src="/img/jobs/futel.png" 
+                className="rounded-2xl bg-blue-100 p-4" 
+                />
+          </div>
         </Link>
         <Link href="https://isoltelecom.com.br">
-          <motion.img
-            className="bg-blue-100 rounded-2xl p-4 cursor-pointer"
-            key={'img/projects/isol.png'}
-            src={'img/projects/isol.png'}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            />
+          <div className="flex-1 m-4">
+              <motion.img 
+                src="img/projects/isol.png" 
+                className="rounded-2xl bg-gray-300 p-4" 
+                />
+          </div>
         </Link>
-        <Link href="https://troyaadvogados.com.br">
-          <motion.img
-            className="bg-gray-200 rounded-2xl p-4 cursor-pointer"
-            key={'img/projects/troya-logo.png'}
-            src={'img/projects/troya-logo.png'}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            />
+      </div>
+      <div 
+        id="cases"
+        className="mt-4 flex-1 items-center flex flex-col sm:flex-row"
+      >
+        <Link href="https://botinvest.net/">
+          <div className="flex-1 m-4">
+              <motion.img 
+                src="/img/projects/logo-botinvest.png" 
+                className="rounded-2xl bg-gray-100 p-4" 
+                />
+          </div>
+        </Link>
+        <Link href="https://festquali.com.br/">
+          <div className="flex-1 m-4">
+              <motion.img 
+                src="img/projects/festquali.png" 
+                className="rounded-2xl bg-gray-100 p-4" 
+                />
+          </div>
         </Link>
         <Link href="https://sb.vix.br">
-          <motion.img
-            className="bg-pink-200 rounded-2xl p-4 cursor-pointer"
-            key={'img/projects/sb-vix.png'}
-            src={'img/projects/sb-vix.png'}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            />
+          <div className="flex-1 m-4">
+              <motion.img 
+                src="img/projects/sb-vix.png" 
+                className="rounded-2xl bg-pink-200 p-4" 
+                />
+          </div>
         </Link>
-      </motion.div>
+      </div>
     </div>
   )
 }
