@@ -44,6 +44,11 @@ export default function Home() {
           imgSrc={'/img/projects/gerencia-dds.png'}
           layoutId={'gerencia-dds-logo'}
         />
+        <Card
+          href={'/busca-repositorios'}
+          imgSrc={'/img/projects/busca-repositorios.svg'}
+          layoutId={'busca-repositorios-logo'}
+        />
       </motion.div>
       
       <motion.h3
