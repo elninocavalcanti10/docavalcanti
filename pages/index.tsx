@@ -49,6 +49,14 @@ export default function Home() {
           imgSrc={'/img/projects/busca-repositorios.svg'}
           layoutId={'busca-repositorios-logo'}
         />
+        <Card
+          href={'https://members-org-git.vercel.app'}
+          imgSrc={'/img/projects/github-mark.png'}
+        />
+        <Card
+          href={'https://gobiblia.vercel.app/'}
+          imgSrc={'/img/projects/gamebiblia.png'}
+        />
       </motion.div>
       
       <motion.h3

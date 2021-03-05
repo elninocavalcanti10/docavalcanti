@@ -5,7 +5,7 @@ import Variantes from './Variantes'
 interface CardProps {
   href: string
   imgSrc: string
-  layoutId: string
+  layoutId?: string
 }
 const Card: React.FC<CardProps> = ({ href, imgSrc, layoutId }) => {
     return (
